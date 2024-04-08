@@ -24,4 +24,6 @@ fi
 # Run the Docker container
 docker run -d -p 3001:3000 --name node_chat my-node-app
 
+systemctl restart httpd.service
+
 echo "Deployment finished!"
